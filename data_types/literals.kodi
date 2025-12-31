@@ -1,0 +1,7 @@
+// Test basic data types
+print(42)
+print(3.14)
+print("hello")
+print(true)
+print(false)
+print(null)

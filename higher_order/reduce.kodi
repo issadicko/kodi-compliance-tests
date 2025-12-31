@@ -1,0 +1,12 @@
+// Test reduce function
+let numbers = [1, 2, 3, 4, 5]
+let sum = reduce(numbers, fn(acc, x) { return acc + x }, 0)
+print(sum)
+
+// Product
+let product = reduce([2, 3, 4], fn(acc, x) { return acc * x }, 1)
+print(product)
+
+// With initial value
+let withInit = reduce([1, 2, 3], fn(acc, x) { return acc + x }, 100)
+print(withInit)

@@ -1,0 +1,22 @@
+// Test higher-order functions (passing functions as arguments)
+let apply = fn(f, x) {
+    return f(x)
+}
+
+let square = fn(n) { return n * n }
+let negate = fn(n) { return -n }
+
+print(apply(square, 5))
+print(apply(negate, 10))
+
+// Function returning function
+let compose = fn(f, g) {
+    return fn(x) {
+        return f(g(x))
+    }
+}
+
+let addOne = fn(x) { return x + 1 }
+let double = fn(x) { return x * 2 }
+let addOneThenDouble = compose(double, addOne)
+print(addOneThenDouble(3))

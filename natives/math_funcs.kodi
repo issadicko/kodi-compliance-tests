@@ -1,0 +1,29 @@
+// Test native math functions
+print(abs(-42))
+print(abs(42))
+
+print(floor(3.7))
+print(floor(3.2))
+
+print(ceil(3.2))
+print(ceil(3.7))
+
+print(round(3.4))
+print(round(3.5))
+print(round(3.6))
+
+print(min(5, 3))
+print(min(2, 8))
+
+print(max(5, 3))
+print(max(2, 8))
+
+print(pow(2, 3))
+print(pow(10, 2))
+
+print(sqrt(16))
+print(sqrt(25))
+
+// Trigonometric (approximate checks)
+print(round(sin(0)))
+print(round(cos(0)))

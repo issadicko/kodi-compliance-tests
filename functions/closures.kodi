@@ -1,0 +1,13 @@
+// Test closures - capturing outer variable
+let multiplier = fn(factor) {
+    return fn(x) {
+        return x * factor
+    }
+}
+
+let double = multiplier(2)
+let triple = multiplier(3)
+print(double(5))
+print(triple(5))
+print(double(10))
+print(triple(10))

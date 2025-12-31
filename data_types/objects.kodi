@@ -1,0 +1,15 @@
+// Test objects
+let person = {name: "Alice", age: 30}
+print(person.name)
+print(person.age)
+print(person["name"])
+
+// Nested objects
+let data = {user: {id: 1, info: {city: "Paris"}}}
+print(data.user.id)
+print(data.user.info.city)
+
+// Mixed object with array
+let mixed = {items: [10, 20, 30], count: 3}
+print(mixed.items[1])
+print(mixed.count)

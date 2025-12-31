@@ -1,0 +1,4 @@
+// Test hash functions
+print(md5("hello"))
+print(sha1("hello"))
+print(sha256("hello"))

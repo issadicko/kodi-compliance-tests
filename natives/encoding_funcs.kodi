@@ -1,0 +1,19 @@
+// Test encoding functions
+
+// Base64
+print(base64Encode("hello"))
+print(base64Decode("aGVsbG8="))
+
+// URL encoding
+print(urlEncode("hello world"))
+print(urlDecode("hello%20world"))
+
+// JSON
+let obj = {name: "test", value: 42}
+let jsonStr = jsonStringify(obj)
+print(contains(jsonStr, "test"))
+print(contains(jsonStr, "42"))
+
+let parsed = jsonParse("{\"a\":1,\"b\":2}")
+print(parsed.a)
+print(parsed.b)

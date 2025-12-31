@@ -1,0 +1,20 @@
+// Test arrays
+let arr = [1, 2, 3]
+print(arr[0])
+print(arr[1])
+print(arr[2])
+
+let mixed = [1, "two", true, null]
+print(mixed[0])
+print(mixed[1])
+print(mixed[2])
+print(mixed[3])
+
+// Nested arrays
+let nested = [[1, 2], [3, 4]]
+print(nested[0][0])
+print(nested[1][1])
+
+// Empty array
+let empty = []
+print(empty[0])

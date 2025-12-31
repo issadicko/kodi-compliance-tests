@@ -1,0 +1,27 @@
+// Test null-safety operators
+
+// Elvis operator ?:
+let a = null
+let b = "default"
+print(a ?: "fallback")
+print(b ?: "fallback")
+
+let x = null
+print(x ?: 42)
+
+let y = 100
+print(y ?: 42)
+
+// Safe access operator ?.
+let obj = {name: "Alice"}
+print(obj?.name)
+
+let empty = null
+print(empty?.name)
+
+// Chained safe access
+let data = {user: {profile: {city: "Paris"}}}
+print(data?.user?.profile?.city)
+
+let partial = {user: null}
+print(partial?.user?.name)

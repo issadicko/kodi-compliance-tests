@@ -1,0 +1,19 @@
+// Test string templates
+let name = "World"
+print("Hello ${name}!")
+
+let a = 10
+let b = 20
+print("Sum: ${a + b}")
+
+let person = {name: "Bob", age: 25}
+print("${person.name} is ${person.age} years old")
+
+// Nested expressions
+print("Result: ${(2 + 3) * 4}")
+
+// Multiple interpolations
+let x = 1
+let y = 2
+let z = 3
+print("${x}, ${y}, ${z}")

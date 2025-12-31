@@ -1,0 +1,9 @@
+// Test unary operators
+print(-5)
+print(-(-10))
+print(!true)
+print(!false)
+print(!!true)
+
+let x = 42
+print(-x)

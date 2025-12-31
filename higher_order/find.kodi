@@ -1,0 +1,19 @@
+// Test find function
+let numbers = [1, 2, 3, 4, 5]
+let found = find(numbers, fn(x) { return x > 3 })
+print(found)
+
+// Find first even
+let first_even = find([1, 3, 5, 6, 7, 8], fn(x) { return x % 2 == 0 })
+print(first_even)
+
+// Find not found
+let not_found = find([1, 2, 3], fn(x) { return x > 100 })
+print(not_found)
+
+// Test findIndex
+let idx = findIndex([10, 20, 30, 40], fn(x) { return x == 30 })
+print(idx)
+
+let idx_not_found = findIndex([1, 2, 3], fn(x) { return x == 99 })
+print(idx_not_found)

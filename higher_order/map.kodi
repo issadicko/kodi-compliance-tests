@@ -1,0 +1,13 @@
+// Test map function
+let numbers = [1, 2, 3, 4, 5]
+let doubled = map(numbers, fn(x) { return x * 2 })
+for (n in doubled) {
+    print(n)
+}
+
+// Map with strings
+let names = ["alice", "bob"]
+let upper = map(names, fn(s) { return toUpperCase(s) })
+for (name in upper) {
+    print(name)
+}

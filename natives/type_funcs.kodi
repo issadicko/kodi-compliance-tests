@@ -1,0 +1,22 @@
+// Test type checking functions
+print(typeOf(42))
+print(typeOf("hello"))
+print(typeOf(true))
+print(typeOf(null))
+print(typeOf([1, 2, 3]))
+print(typeOf({a: 1}))
+
+print(isNull(null))
+print(isNull(42))
+print(isNull(""))
+
+print(isNumber(42))
+print(isNumber(3.14))
+print(isNumber("42"))
+
+print(isString("hello"))
+print(isString(42))
+
+print(isBool(true))
+print(isBool(false))
+print(isBool(1))

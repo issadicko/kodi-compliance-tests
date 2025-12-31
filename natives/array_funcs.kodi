@@ -1,0 +1,22 @@
+// Test native array functions
+print(size([1, 2, 3, 4, 5]))
+print(size([]))
+
+print(first([10, 20, 30]))
+print(last([10, 20, 30]))
+
+let arr = [5, 2, 8, 1, 9]
+let sorted = sort(arr)
+for (n in sorted) {
+    print(n)
+}
+
+let reversed = reverse([1, 2, 3])
+for (n in reversed) {
+    print(n)
+}
+
+let sliced = slice([10, 20, 30, 40, 50], 1, 4)
+for (n in sliced) {
+    print(n)
+}

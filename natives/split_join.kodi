@@ -1,0 +1,11 @@
+// Test split and join
+let parts = split("a,b,c", ",")
+print(parts[0])
+print(parts[1])
+print(parts[2])
+
+let joined = join(["x", "y", "z"], "-")
+print(joined)
+
+let words = split("hello world kodi", " ")
+print(join(words, "_"))
