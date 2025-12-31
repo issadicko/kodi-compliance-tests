@@ -1,0 +1,14 @@
+let add = fn(a, b) {
+    return a + b
+}
+
+print(add(5, 7))
+
+let factorial = fn(n) {
+    if (n <= 1) {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+print(factorial(5))

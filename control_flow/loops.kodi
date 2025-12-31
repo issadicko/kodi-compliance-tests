@@ -1,0 +1,10 @@
+let numbers = [1, 2, 3]
+for (n in numbers) {
+    print(n * 2)
+}
+
+let sum = 0
+for (x in [10, 20, 30]) {
+    sum = sum + x
+}
+print(sum)

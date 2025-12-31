@@ -1,0 +1,19 @@
+if (true) {
+    print("A")
+} else {
+    print("B")
+}
+
+if (false) {
+    print("C")
+} else {
+    print("D")
+}
+
+let x = 10
+if (x > 5) {
+    print("big")
+    if (x == 10) {
+        print("ten")
+    }
+}
