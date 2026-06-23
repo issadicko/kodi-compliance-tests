@@ -1,0 +1,18 @@
+// some/every/flatMap, regex, spread, destructuring
+print(some([1,2,3], fn(x){ x > 2 }))
+print(every([2,4,6], fn(x){ x % 2 == 0 }))
+print(flatMap([1,2,3], fn(x){ [x, x * 10] }))
+print(regexReplace("a1b2c3", "[0-9]", "#"))
+
+let a = [1, 2]
+let b = [3, 4]
+print([...a, ...b])
+
+fn sum3(x, y, z) { return x + y + z }
+print(sum3(...[10, 20, 30]))
+
+let [first, second] = [100, 200]
+print(first + second)
+
+let {x, y} = {x: 7, y: 3}
+print(x * y)

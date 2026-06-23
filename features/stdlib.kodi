@@ -1,0 +1,8 @@
+// expanded standard library
+print(sum([1,2,3,4]))
+print(avg([2,4,6]))
+print(range(4).join(","))
+print(unique([1,1,2,3,3]).join(","))
+print(keys({b:2, a:1, c:3}).join(","))
+print(has([1,2,3], 2))
+print(parseInt("42"))

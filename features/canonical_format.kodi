@@ -1,0 +1,9 @@
+// canonical output formatting, identical across implementations
+print(3)
+print(3.5)
+print([1, 2, 3])
+print([1, [2, 3]])
+print({b: 2, a: 1})
+print("n=" + 5)
+let arr = [1, 2, 3]
+print("arr=" + arr)

@@ -1,0 +1,7 @@
+// method-call syntax (receiver.method(args))
+print("hello".toUpperCase())
+print("  hi  ".trim())
+print([1,2,3].size())
+print(["a","b","c"].join("-"))
+print([1,2,3].map(fn(x){ x * 2 }).join(","))
+print([1,2,3,4].filter(fn(x){ x > 2 }).join(","))

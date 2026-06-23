@@ -1,0 +1,125 @@
+// ============ end-to-end feature coverage ============
+
+// --- variables, arithmetic, strings, templates ---
+let name = "Kodi"
+let version = 1.5
+print("Hello " + name)
+print("v${version} ready")
+print(10 + 2 * 3 - 4 / 2)
+
+// --- canonical formatting (collections / numbers) ---
+print(42)
+print(3.5)
+print([1, 2, 3])
+print([1, [2, 3]])
+print({b: 2, a: 1})
+
+// --- if / else if / else ---
+let score = 75
+if (score >= 90) { print("A") } else if (score >= 70) { print("B") } else { print("C") }
+
+// --- ternary (nested, right-assoc) ---
+fn classify(n) {
+  return n > 0 ? "positive" : n < 0 ? "negative" : "zero"
+}
+print(classify(5))
+print(classify(-3))
+print(classify(0))
+
+// --- loops, break, continue, compound assignment, ++/-- ---
+let total = 0
+for (i in [1, 2, 3, 4, 5]) {
+  if (i == 3) { continue }
+  if (i == 5) { break }
+  total += i
+}
+print(total)
+
+let counter = 0
+while (true) {
+  counter++
+  if (counter >= 4) { break }
+}
+print(counter)
+
+// --- named functions + recursion ---
+fn fib(n) {
+  if (n < 2) { return n }
+  return fib(n - 1) + fib(n - 2)
+}
+print(fib(10))
+
+// --- null-safety ---
+let user = {status: "online"}
+print(user?.status)
+let missing = null
+print(missing ?: "default")
+
+// --- method-call syntax + chaining ---
+print("  Hello World  ".trim().toUpperCase())
+print([3, 1, 2].sort().join(","))
+
+// --- higher-order: map/filter/reduce/find/some/every/flatMap ---
+let nums = [1, 2, 3, 4, 5]
+print(nums.map(fn(x){ x * 2 }))
+print(nums.filter(fn(x){ x % 2 == 0 }))
+print(reduce(nums, fn(acc, x){ acc + x }, 0))
+print(find(nums, fn(x){ x > 3 }))
+print(some(nums, fn(x){ x > 4 }))
+print(every(nums, fn(x){ x > 0 }))
+print(flatMap([1, 2], fn(x){ [x, x * 10] }))
+
+// --- expanded stdlib ---
+print(sum(nums))
+print(avg(nums))
+print(range(5))
+print(unique([1, 1, 2, 3, 3]))
+print(keys({z: 1, a: 2, m: 3}))
+print(has(nums, 3))
+print(parseInt("99"))
+
+// --- regex ---
+print(regexMatch("order-123", "[0-9]+"))
+print(regexReplace("a1b2c3", "[0-9]", "#"))
+
+// --- spread ---
+let a = [1, 2]
+let b = [3, 4]
+print([...a, ...b, 5])
+fn add3(x, y, z) { return x + y + z }
+print(add3(...[10, 20, 30]))
+
+// --- destructuring ---
+let [first, second] = [100, 200]
+print(first + second)
+let {x, y} = {x: 7, y: 3}
+print(x * y)
+
+// --- try / catch (positioned error message, now identical across engines) ---
+fn safeDiv(p, q) {
+  try {
+    return p / q
+  } catch (e) {
+    return -1
+  }
+}
+print(safeDiv(10, 2))
+print(safeDiv(10, 0))
+
+let captured = "none"
+try {
+  let bad = undefinedThing
+} catch (e) {
+  captured = e
+}
+print(captured)
+
+// --- JSON round-trip ---
+let parsed = jsonParse("{\"items\": [1, 2], \"name\": \"x,y\"}")
+print(jsonStringify(parsed))
+
+// --- block comment /* ... */ ---
+let result = 5 /* inline */ + 5
+print(result)
+
+print("done")

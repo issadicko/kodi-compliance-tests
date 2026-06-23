@@ -1,0 +1,19 @@
+// named functions, ternary, else-if, block comments
+fn classify(n) {
+  return n > 0 ? "positive" : n < 0 ? "negative" : "zero"
+}
+print(classify(5))
+print(classify(-3))
+print(classify(0))
+
+fn fib(n) {
+  if (n < 2) { return n }
+  return fib(n - 1) + fib(n - 2)
+}
+print(fib(10))
+
+let score = 75
+if (score >= 90) { print("A") } else if (score >= 70) { print("B") } else { print("C") }
+
+let x = 10 /* block comment */ + 5
+print(x)

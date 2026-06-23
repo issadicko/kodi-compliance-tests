@@ -1,0 +1,20 @@
+// try/catch behaviour (error positions are implementation-specific,
+// so we deliberately avoid printing them here)
+fn safeDiv(a, b) {
+  try {
+    return a / b
+  } catch (e) {
+    return -1
+  }
+}
+print(safeDiv(10, 2))
+print(safeDiv(10, 0))
+
+let status = "none"
+try {
+  let x = undefinedThing
+} catch (e) {
+  status = "caught"
+}
+print(status)
+print("done")
