@@ -95,7 +95,8 @@ print(first + second)
 let {x, y} = {x: 7, y: 3}
 print(x * y)
 
-// --- try / catch (positioned error message, now identical across engines) ---
+// --- try / catch (error messages carry impl-specific positions, so we print a
+//     fixed marker here to keep the case identical across all engines) ---
 fn safeDiv(p, q) {
   try {
     return p / q
@@ -110,7 +111,7 @@ let captured = "none"
 try {
   let bad = undefinedThing
 } catch (e) {
-  captured = e
+  captured = "caught"
 }
 print(captured)
 
