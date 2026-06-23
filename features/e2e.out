@@ -1,0 +1,45 @@
+Hello Kodi
+v1.5 ready
+14
+42
+3.5
+[1, 2, 3]
+[1, [2, 3]]
+{a: 1, b: 2}
+B
+positive
+negative
+zero
+7
+4
+55
+online
+default
+HELLO WORLD
+1,2,3
+[2, 4, 6, 8, 10]
+[2, 4]
+15
+4
+true
+true
+[1, 10, 2, 20]
+15
+3
+[0, 1, 2, 3, 4]
+[1, 2, 3]
+[a, m, z]
+true
+99
+true
+a#b#c#
+[1, 2, 3, 4, 5]
+60
+300
+21
+5
+-1
+line 111, col 3: undefined variable: undefinedThing
+{"items":[1,2],"name":"x,y"}
+10
+done

@@ -1,0 +1,21 @@
+// break / continue in loops
+let s = 0
+for (i in [1,2,3,4,5]) {
+  if (i == 3) { break }
+  s += i
+}
+print(s)
+
+let t = 0
+for (i in [1,2,3,4]) {
+  if (i == 2) { continue }
+  t += i
+}
+print(t)
+
+let n = 0
+while (true) {
+  n++
+  if (n >= 5) { break }
+}
+print(n)

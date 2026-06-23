@@ -1,0 +1,12 @@
+// compound assignment and ++/--
+let x = 10
+x += 5
+x -= 3
+x *= 2
+print(x)
+
+let n = 5
+n++
+n--
+n--
+print(n)
